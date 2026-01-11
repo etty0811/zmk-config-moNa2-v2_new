@@ -76,10 +76,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E    &kp R      &kp T                                               &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D    &kp F      &kp G                                &kp F13        &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C    &kp V      &kp B        &kp LANG2               &kp LANG1      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp F16  &lt 1 F10  &lt 2 SPACE  &lt_to_layer_0 3 TAB    &kp BACKSPACE  &lt 1 SPACE                             &kp LEFT_ALT
+&kp Q             &kp W         &kp E         &kp R      &kp T                                       &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F      &kp G                       &kp UNDERSCORE  &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B        &lt 4 LANG2    &kp LANG1       &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 F10  &lt 2 SPACE  &lt 3 TAB      &kp BACKSPACE   &lt 1 SPACE                             &kp ENTER
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -98,10 +98,10 @@
 
         layer_2 {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN  &kp POUND          &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp MINUS  &kp UNDERSCORE
-&kp GRAVE        &kp TILDE    &kp DOUBLE_QUOTES  &kp SQT     &trans                  &trans   &mkp MB3   &mkp MB1       &mkp MB2      &kp EQUAL  &kp PLUS
-&kp F1           &kp F2       &kp F3             &kp F4      &kp F5       &kp F11    &kp F12  &kp F6     &kp F7         &kp F8        &kp F9     &kp F10
-&trans           &trans       &trans             &trans      &trans       &trans     &trans   &trans                                             &trans
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp POUND          &kp DOLLAR  &kp PERCENT                      &kp AMPERSAND  &kp SQT   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
+&kp GRAVE        &kp TILDE          &kp DOUBLE_QUOTES  &kp SQT     &trans                  &trans   &mkp MB3       &mkp MB1  &mkp MB2              &kp EQUAL              &kp PLUS
+&kp F1           &kp F2             &kp F3             &kp F4      &kp F5       &kp F11    &kp F12  &kp F6         &kp F7    &kp F8                &kp F9                 &kp F10
+&trans           &trans             &trans             &trans      &trans       &trans     &trans   &trans                                                                &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
