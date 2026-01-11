@@ -21,19 +21,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        layer4_ESC {
-            bindings = <&lt 4 ESC>;
-            key-positions = <39 38>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -76,10 +64,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R      &kp T                                       &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F      &kp G                       &kp UNDERSCORE  &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B        &lt 4 LANG2    &kp LANG1       &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 F10  &lt 2 SPACE  &lt 3 TAB      &kp BACKSPACE   &lt 1 SPACE                             &kp ENTER
+&kp Q             &kp W         &kp E         &kp R      &kp T                                       &kp Y         &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F      &kp G                       &kp UNDERSCORE  &kp H         &kp J  &kp K      &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B        &lt 4 LANG2    &kp LANG1       &kp N         &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 F10  &lt 2 SPACE  &lt 3 TAB      &kp BACKSPACE   &lt 1 RSHIFT                             &kp ENTER
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -87,10 +75,10 @@
 
         layer_1 {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4       &kp NUMBER_5                    &kp NUMBER_6  &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9  &kp NUMBER_0
-&trans        &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans                  &trans  &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans        &kp BACKSLASH
-&trans        &trans        &trans            &trans             &trans        &trans    &trans  &trans        &trans                &trans                 &trans        &kp PIPE
-&trans        &trans        &trans            &trans             &trans        &trans    &trans  &trans                                                                   &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+&trans        &trans        &trans        &trans        &trans                  &trans  &mkp MB3      &mkp MB1      &mkp MB2      &trans        &kp BACKSLASH
+&trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans        &trans        &trans        &trans        &kp PIPE
+&trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans                                                  &kp ESCAPE
             >;
 
             sensor-bindings = <&scroll_right_left>;
@@ -98,10 +86,10 @@
 
         layer_2 {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp POUND          &kp DOLLAR  &kp PERCENT                      &kp AMPERSAND  &kp SQT   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
-&kp GRAVE        &kp TILDE          &kp DOUBLE_QUOTES  &kp SQT     &trans                  &trans   &mkp MB3       &mkp MB1  &mkp MB2              &kp EQUAL              &kp PLUS
-&kp F1           &kp F2             &kp F3             &kp F4      &kp F5       &kp F11    &kp F12  &kp F6         &kp F7    &kp F8                &kp F9                 &kp F10
-&trans           &trans             &trans             &trans      &trans       &trans     &trans   &trans                                                                &trans
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp POUND  &kp DOLLAR    &kp PERCENT                              &kp AMPERSAND  &kp SQT    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
+&kp PLUS         &kp MINUS          &kp SLASH  &kp ASTERISK  &trans                  &trans           &kp AT_SIGN    &kp COLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH
+&kp F1           &kp F2             &kp F3     &kp F4        &kp F5       &kp F11    &kp F12          &kp F6         &kp F7     &kp F8                &kp F9                 &kp F10
+&trans           &trans             &trans     &trans        &trans       &trans     &kp RIGHT_SHIFT  &trans                                                                 &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
