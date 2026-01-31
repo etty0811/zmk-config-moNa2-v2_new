@@ -84,48 +84,57 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        windows {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R      &kp T                                    &kp Y          &kp U  &kp I      &kp O    &lt 2 P
-&kp A             &kp S         &kp D         &kp F      &kp G                       &kp MINUS    &kp H          &kp J  &kp K      &kp L    &lt 2 SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B        &lt 4 LANG2    &kp LANG1    &kp N          &kp M  &kp COMMA  &kp DOT  &mt LCTRL SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 F10  &lt 2 SPACE  &lt 3 TAB      &lt 1 ENTER  &kp BACKSPACE                             &kp ESC
+&kp Q             &kp W         &kp E         &kp R      &kp T                                    &kp Y          &kp U  &kp I      &kp O    &lt 3 P
+&kp A             &kp S         &kp D         &kp F      &kp G                       &kp MINUS    &kp H          &kp J  &kp K      &kp L    &lt 3 SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B        &lt 5 LANG2    &kp LANG1    &kp N          &kp M  &kp COMMA  &kp DOT  &mt LCTRL SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 F10  &lt 3 SPACE  &lt 2 TAB      &lt 1 ENTER  &kp BACKSPACE                             &kp ESC
             >;
 
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_1 {
+        win1 {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&trans        &trans        &trans        &trans        &trans                  &trans  &mkp MB3      &mkp MB1      &mkp MB2      &trans        &kp BACKSLASH
-&trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans        &trans        &trans        &trans        &kp PIPE
-&trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans                                                  &kp ESCAPE
+&kp F1     &kp F2     &kp F3     &kp F4     &kp F5                       &kp F6    &kp F7    &kp F8    &kp F9  &kp F10
+&kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)            &trans  &mkp MB3  &mkp MB1  &mkp MB2  &trans  &kp BACKSLASH
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans    &trans  &trans    &trans    &trans    &trans  &kp PIPE
+&trans     &trans     &trans     &trans     &trans     &trans    &trans  &trans                                &kp ESCAPE
             >;
 
             sensor-bindings = <&scroll_right_left>;
         };
 
-        layer_2 {
+        layer_3 {
+            bindings = <
+&trans  &kp LC(LS(TAB))     &kp LG(UP_ARROW)        &kp LC(TAB)              &kp PRINTSCREEN                    &trans      &kp HOME        &kp UP_ARROW    &kp END          &trans
+&trans  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)      &kp LG(RIGHT_ARROW)      &trans                     &trans  &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans              &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &trans           &trans    &trans  &trans      &trans          &kp PAGE_UP     &kp PAGE_DOWN    &trans
+&trans  &trans              &trans                  &trans                   &trans           &trans    &trans  &kp DELETE                                                   &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        };
+
+        mac {
             bindings = <
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp POUND  &kp DOLLAR    &kp PERCENT                              &kp AMPERSAND  &kp SQT    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
 &kp PLUS         &kp MINUS          &kp SLASH  &kp ASTERISK  &trans                  &trans           &kp AT_SIGN    &kp COLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH
-&kp F1           &kp F2             &kp F3     &kp F4        &kp F5       &kp F11    &kp F12          &kp F6         &kp F7     &kp F8                &kp F9                 &kp F10
+&trans           &kp F2             &kp F3     &kp F4        &kp F5       &kp F11    &kp F12          &kp F6         &kp F7     &kp F8                &kp F9                 &kp F10
 &trans           &trans             &trans     &trans        &trans       &trans     &kp RIGHT_SHIFT  &trans                                                                 &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_3 {
+        base-mac {
             bindings = <
-&trans  &kp LC(LS(TAB))     &kp PRINTSCREEN         &kp LC(TAB)              &trans                                     &trans  &kp HOME        &kp UP_ARROW    &kp END          &trans
-&trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)     &kp LC(LG(LEFT_ARROW))   &kp LC(LG(RIGHT_ARROW))            &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &kp LEFT_SHIFT      &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &trans                   &trans    &trans  &trans  &kp DELETE      &kp PAGE_UP     &kp PAGE_DOWN    &trans
-&trans  &trans              &trans                  &trans                   &trans                   &trans    &trans  &trans                                                   &trans
+&kp Q     &kp W      &kp E     &kp R    &kp T                            &kp Y     &kp U  &kp I      &kp O    &kp P
+&kp A     &kp S      &kp D     &kp F    &kp G                 &kp MINUS  &kp H     &kp J  &kp K      &kp L    &kp SEMI
+&kp Z     &kp X      &kp C     &kp V    &kp B      &trans     &trans     &kp N     &kp M  &kp COMMA  &kp DOT  &kp FSLH
+&kp LGUI  &kp LCTRL  &kp LALT  &kp F10  &kp SPACE  &kp TAB    &kp ENTER  &kp BSPC                             &kp ESC
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         layer_4 {
