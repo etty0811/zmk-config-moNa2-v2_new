@@ -43,6 +43,16 @@
             bindings = <&kp LC(LA(DEL))>;
             key-positions = <38 39>;
         };
+
+        win {
+            bindings = <&to 0>;
+            key-positions = <38 5>;
+        };
+
+        mac {
+            bindings = <&to 4>;
+            key-positions = <6 38>;
+        };
     };
 
     macros {
