@@ -2,7 +2,6 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
-
 &default_transform {
     col-offset = <6>;
 };
@@ -56,6 +55,17 @@
     };
 };
 
+{
+  input_processors {
+    zip_hwheel_killer: zip_hwheel_killer {
+      compatible = "zmk,input-processor-scaler";
+      #input-processor-cells = <2>;
+      type = <INPUT_EV_REL>;
+      codes = <INPUT_REL_HWHEEL>;
+      /* track-remainders; を “付けない” のが重要 */
+    };
+  };
+};
 
 // Overrides for the input listener node
 &trackball_central_listener {
