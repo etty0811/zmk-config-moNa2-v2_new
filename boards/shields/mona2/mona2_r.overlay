@@ -55,17 +55,6 @@
     };
 };
 
-{
-  input_processors {
-    zip_hwheel_killer: zip_hwheel_killer {
-      compatible = "zmk,input-processor-scaler";
-      #input-processor-cells = <2>;
-      type = <INPUT_EV_REL>;
-      codes = <INPUT_REL_HWHEEL>;
-      /* track-remainders; を “付けない” のが重要 */
-    };
-  };
-};
 
 // Overrides for the input listener node
 &trackball_central_listener {
@@ -79,8 +68,7 @@
                            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
                            <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
                            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
-                           <&zip_scroll_scaler 1 8>                            //スクロール量を1/4倍
-                           <&zip_hwheel_killer 1 16>; 
+                           <&zip_scroll_scaler 1 8>;                           //スクロール量を1/4倍
     };
 
 };
