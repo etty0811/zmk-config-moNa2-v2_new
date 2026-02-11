@@ -118,10 +118,10 @@
 
         windows3 {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                            &kp CARET         &kp AMPERSAND          &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp EQUAL
-&trans           &trans       &trans    &trans      &trans                 &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET      &kp BACKSLASH      &kp SEMICOLON         &kp SINGLE_QUOTE
-&trans           &trans       &trans    &trans      &trans       &trans    &trans          &trans            &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp LS(INT1)          &trans
-&trans           &trans       &trans    &trans      &trans       &trans    &kp LEFT_SHIFT  &trans                                                                            &trans
+&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                               &kp CARET         &kp AMPERSAND          &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp EQUAL
+&trans           &trans       &trans    &trans      &trans                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET      &kp BACKSLASH      &kp SEMICOLON         &kp SINGLE_QUOTE
+&kp LEFT_SHIFT   &trans       &trans    &trans      &trans       &trans       &trans          &trans            &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp LS(INT1)          &trans
+&trans           &trans       &trans    &trans      &trans       &kp LCTRL    &kp LEFT_SHIFT  &trans                                                                            &trans
             >;
         };
 
