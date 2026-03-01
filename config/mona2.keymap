@@ -147,10 +147,10 @@
 
         mac2 {
             bindings = <
-&kp F1     &kp F2     &kp F3     &kp F4     &kp F5                       &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)            &trans  &trans  &trans  &trans  &trans  &trans
-&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans     &trans     &trans     &trans     &trans    &trans  &trans                          &trans
+&kp F1     &kp F2     &kp F3     &kp F4     &kp F5                       &kp F6    &kp F7    &kp F8    &kp F9  &kp F10
+&kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)            &trans  &mkp MB3  &mkp MB1  &mkp MB2  &trans  &trans
+&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)  &trans    &trans  &trans    &trans    &trans    &trans  &trans
+&trans     &trans     &trans     &trans     &trans     &trans    &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
