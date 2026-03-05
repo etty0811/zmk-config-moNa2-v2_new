@@ -50,7 +50,7 @@
         };
 
         mac {
-            bindings = <&to 4>;
+            bindings = <&to 3>;
             key-positions = <6 38>;
         };
     };
@@ -99,7 +99,7 @@
 &kp Q             &kp W         &kp E         &kp R      &kp T                                    &kp Y          &kp U  &kp I      &kp O    &lt 2 P
 &kp A             &kp S         &kp D         &kp F      &kp G                       &lt 8 MINUS  &kp H          &kp J  &kp K      &kp L    &lt 8 ENTER
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B        &lt 9 LANG2    &kp LANG1    &kp N          &kp M  &kp COMMA  &kp DOT  &mt LCTRL SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 F10  &lt 2 SPACE  &lt 1 TAB      &lt 1 ENTER  &kp BACKSPACE                             &kp ESC
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 F10  &lt 2 SPACE  &lt 1 TAB      &lt 1 ENTER  &kp BACKSPACE                             &kp ESC
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -125,23 +125,12 @@
             >;
         };
 
-        scroll {
-            bindings = <
-&trans          &kp LC(LS(TAB))     &kp LG(UP_ARROW)        &kp LC(TAB)              &kp PRINTSCREEN                    &trans      &kp HOME        &kp UP_ARROW    &kp END          &trans
-&trans          &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)      &kp LG(RIGHT_ARROW)      &trans                     &trans  &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp LEFT_SHIFT  &trans              &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &trans           &trans    &trans  &trans      &trans          &kp PAGE_UP     &kp PAGE_DOWN    &trans
-&trans          &trans              &trans                  &trans                   &trans           &trans    &trans  &kp DELETE                                                   &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-        };
-
         base-mac {
             bindings = <
 &kp Q             &kp W      &kp E     &kp R      &kp T                                    &kp Y     &kp U  &kp I      &kp O    &lt 2 P
 &kp A             &kp S      &kp D     &kp F      &kp G                       &lt 8 MINUS  &kp H     &kp J  &kp K      &kp L    &lt 8 ENTER
 &mt LEFT_SHIFT Z  &kp X      &kp C     &kp V      &kp B        &lt 9 LANG2    &kp LANG1    &kp N     &kp M  &kp COMMA  &kp DOT  &kp FSLH
-&kp LGUI          &kp LCTRL  &kp LALT  &lt 3 F10  &lt 6 SPACE  &lt 5 TAB      &kp ENTER    &kp BSPC                             &kp ESC
+&kp LGUI          &kp LCTRL  &kp LALT  &lt 7 F10  &lt 5 SPACE  &lt 4 TAB      &kp ENTER    &kp BSPC                             &kp ESC
             >;
         };
 
@@ -165,6 +154,17 @@
             >;
 
             sensor-bindings = <&scroll_up_down>;
+        };
+
+        scroll {
+            bindings = <
+&trans          &kp LC(LS(TAB))     &kp LG(UP_ARROW)        &kp LC(TAB)              &kp PRINTSCREEN                    &trans      &kp HOME        &kp UP_ARROW    &kp END          &trans
+&trans          &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)      &kp LG(RIGHT_ARROW)      &trans                     &trans  &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LEFT_SHIFT  &trans              &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &trans           &trans    &trans  &trans      &trans          &kp PAGE_UP     &kp PAGE_DOWN    &trans
+&trans          &trans              &trans                  &trans                   &trans           &trans    &trans  &kp DELETE                                                   &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         MOUSE {
