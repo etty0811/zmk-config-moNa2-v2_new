@@ -96,7 +96,7 @@
 
         windows1 {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R      &kp T                                  &kp Y          &kp U  &kp I      &kp O    &lt 4 P
+&kp Q             &kp W         &kp E         &kp R      &kp T                                  &kp Y          &kp U  &kp I      &kp O    &lt 2 P
 &kp A             &kp S         &kp D         &kp F      &kp G                     &lt 8 ESC    &kp H          &kp J  &kp K      &kp L    &lt 8 MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B      &lt 9 LANG2    &kp LANG1    &kp N          &kp M  &kp COMMA  &kp DOT  &mt LCTRL SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 F10  &lt 4 TAB  &lt 3 SPACE    &lt 4 ENTER  &kp BACKSPACE                             &kp RS(INT1)
@@ -107,7 +107,7 @@
 
         base-mac {
             bindings = <
-&kp Q             &kp W      &kp E     &kp R      &kp T                                  &kp Y          &kp U  &kp I      &kp O    &lt 4 P
+&kp Q             &kp W      &kp E     &kp R      &kp T                                  &kp Y          &kp U  &kp I      &kp O    &lt 2 P
 &kp A             &kp S      &kp D     &kp F      &kp G                     &lt 8 ESC    &kp H          &kp J  &kp K      &kp L    &lt 8 MINUS
 &mt LEFT_SHIFT Z  &kp X      &kp C     &kp V      &kp B      &lt 9 LANG2    &kp LANG1    &kp N          &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp LGUI          &kp LCTRL  &kp LALT  &lt 2 F10  &lt 6 TAB  &lt 5 SPACE    &lt 6 ENTER  &kp BACKSPACE                             &kp UNDERSCORE
