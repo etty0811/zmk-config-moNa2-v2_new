@@ -158,9 +158,9 @@
 
         mac3 {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp POUND  &kp DOLLAR    &kp PERCENT                             &kp AMPERSAND  &kp SQT           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&kp PLUS         &kp MINUS          &kp SLASH  &kp ASTERISK  &trans                 &trans           &kp AT_SIGN    &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp COLON              &kp COLON
-&trans           &trans             &trans     &trans        &trans       &trans    &trans           &trans         &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp UNDERSCORE         &trans
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp POUND  &kp DOLLAR    &kp PERCENT                             &kp AMPERSAND  &kp SQT           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET
+&kp PLUS         &kp MINUS          &kp SLASH  &kp ASTERISK  &trans                 &trans           &kp AT_SIGN    &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp SEMICOLON          &kp COLON
+&trans           &trans             &trans     &trans        &trans       &trans    &trans           &trans         &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp UNDERSCORE         &kp PIPE
 &trans           &trans             &trans     &trans        &trans       &trans    &kp RIGHT_SHIFT  &trans                                                                        &trans
             >;
 
