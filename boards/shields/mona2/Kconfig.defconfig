@@ -9,16 +9,6 @@ config ZMK_BLE
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-endif
-
-if SHIELD_MONA2_R || SHIELD_MONA2_L
-
-config NFCT_PINS_AS_GPIOS
-    default y
-
-config ZMK_SPLIT
-    default y
-
 config INPUT
     default y
 
@@ -28,7 +18,22 @@ config ZMK_POINTING
 config SPI
     default y
 
+# cormoran/zmk-driver-pmw3610-with-custom-studio-rpc のドライバ本体
+# (DT に compatible = "cormoran,pmw3610" のノードが無ければ自動的に無効)
+config PMW3610
+    default y
+
 config PAW3222
+    default y
+
+endif
+
+if SHIELD_MONA2_R || SHIELD_MONA2_L
+
+config NFCT_PINS_AS_GPIOS
+    default y
+
+config ZMK_SPLIT
     default y
 
 config RGBLED_WIDGET_BATTERY_LEVEL_HIGH
